@@ -14,8 +14,7 @@ public class CardTransferService {
 
 //        правильная ли реализация проверки и вызов методов в проверки,НЕ знаю как  конверсии или нужно создавать отдельный класс конверсии?
         if (fromCard.getAmount() > 0 && amountToTransfer <= fromCard.getLimit()) {
-            if (fromCard.getCurrency().equals("BYN") && toCard.getCurrency().equals("USD"))
-                double balanceCardFrom = (fromCard.getAmount() - amountToTransfer);
+                double balanceCardFrom = (fromCard.getAmount() - amountToTransfer-Conversion.doConversion());
             fromCard.setAmount(balanceCardFrom);
 
         }
