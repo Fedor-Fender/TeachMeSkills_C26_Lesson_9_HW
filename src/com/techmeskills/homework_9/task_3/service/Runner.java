@@ -21,5 +21,7 @@ public class Runner {
         Address address = new Address("st1245", 4579, "Vitebsk", "Shagal's street");
 
         Client client=new Client("Fedor","BY1994","24/06/1995", address,cards);
+
+        CardTransferService.doTransfer
     }
 }
