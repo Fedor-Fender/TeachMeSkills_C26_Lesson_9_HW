@@ -22,6 +22,6 @@ public class Runner {
 
         Client client=new Client("Fedor","BY1994","24/06/1995", address,cards);
 
-        CardTransferService.doTransfer
+        CardTransferService.doTransfer()// здесь не выполняется т.к не до конца логика реализована в классе
     }
 }
